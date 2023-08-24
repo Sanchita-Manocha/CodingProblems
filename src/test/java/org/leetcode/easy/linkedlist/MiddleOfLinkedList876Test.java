@@ -16,6 +16,7 @@ class MiddleOfLinkedList876Test {
         MiddleOfLinkedList876.ListNode node2 = new MiddleOfLinkedList876.ListNode(2, node3);
         var linkedList = new MiddleOfLinkedList876.ListNode(1, node2);
         assertEquals(node3, sut.middleNode(linkedList));
+        assertEquals(node3, sut.middleNode1(linkedList));
     }
 
     @Test
@@ -27,6 +28,7 @@ class MiddleOfLinkedList876Test {
         MiddleOfLinkedList876.ListNode node2 = new MiddleOfLinkedList876.ListNode(2, node3);
         var linkedList = new MiddleOfLinkedList876.ListNode(1, node2);
         assertEquals(node4, sut.middleNode(linkedList));
+        assertEquals(node4, sut.middleNode1(linkedList));
     }
 
 }

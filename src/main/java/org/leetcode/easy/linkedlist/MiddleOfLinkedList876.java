@@ -37,15 +37,25 @@ public class MiddleOfLinkedList876 {
 
         int size = 0;
         var currentNode = head;
-        while (currentNode != null){
+        while (currentNode != null) {
             size++;
             currentNode = currentNode.next;
         }
 
         currentNode = head;
-        for(int i=1; i< size/2+1; i++){
+        for (int i = 1; i < size / 2 + 1; i++) {
             currentNode = currentNode.next;
         }
-            return currentNode;
+        return currentNode;
+    }
+
+    public ListNode middleNode1(ListNode head) {
+        ListNode end = head;
+        ListNode middle = head;
+        while (end != null && end.next != null) {
+            end = end.next.next;
+            middle = middle.next;
+        }
+        return middle;
     }
 }
