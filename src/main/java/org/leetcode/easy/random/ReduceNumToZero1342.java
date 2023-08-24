@@ -1,4 +1,4 @@
-package org.leetcode.easy;
+package org.leetcode.easy.random;
 
 public class ReduceNumToZero1342 {
     public int numberOfSteps(int num) {

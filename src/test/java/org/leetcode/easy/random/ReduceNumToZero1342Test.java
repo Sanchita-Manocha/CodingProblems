@@ -1,8 +1,8 @@
-package org.leetcode.easy;
+package org.leetcode.easy.random;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ReduceNumToZero1342Test {
     ReduceNumToZero1342 sut = new ReduceNumToZero1342();

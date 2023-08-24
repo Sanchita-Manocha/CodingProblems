@@ -1,10 +1,10 @@
-package org.leetcode.easy;
+package org.leetcode.easy.random;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FizzBuzz412Test {
     FizzBuzz412 sut = new FizzBuzz412();

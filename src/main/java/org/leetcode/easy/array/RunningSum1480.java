@@ -1,4 +1,4 @@
-package org.leetcode.array.easy;
+package org.leetcode.easy.array;
 
 public class RunningSum1480 {
     public int[] runningSum(int[] nums) {

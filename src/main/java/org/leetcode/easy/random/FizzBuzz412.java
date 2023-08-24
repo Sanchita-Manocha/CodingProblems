@@ -1,4 +1,4 @@
-package org.leetcode.easy;
+package org.leetcode.easy.random;
 
 import java.util.ArrayList;
 import java.util.List;

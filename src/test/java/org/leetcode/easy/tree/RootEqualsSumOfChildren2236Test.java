@@ -1,8 +1,9 @@
-package org.leetcode.tree.easy;
+package org.leetcode.easy.tree;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class RootEqualsSumOfChildren2236Test {
 

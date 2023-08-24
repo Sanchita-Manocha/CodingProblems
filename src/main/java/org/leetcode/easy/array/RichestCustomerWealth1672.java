@@ -1,4 +1,4 @@
-package org.leetcode.array.easy;
+package org.leetcode.easy.array;
 
 public class RichestCustomerWealth1672 {
     public int maximumWealth(int[][] accounts) {

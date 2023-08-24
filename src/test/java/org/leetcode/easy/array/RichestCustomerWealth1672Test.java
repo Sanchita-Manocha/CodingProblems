@@ -1,4 +1,4 @@
-package org.leetcode.array.easy;
+package org.leetcode.easy.array;
 
 import org.junit.jupiter.api.Test;
 

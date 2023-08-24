@@ -1,4 +1,4 @@
-package org.leetcode.tree.easy;
+package org.leetcode.easy.tree;
 
 public class RootEqualsSumOfChildren2236 {
 
