@@ -5,21 +5,34 @@ import java.util.Map;
 
 public class RansomNote383 {
     public boolean canConstruct(String ransomNote, String magazine) {
+        if (ransomNote.length() > magazine.length())
+            return false;
         Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < magazine.length(); i++) {
-            Character key = magazine.charAt(i);
-            map.compute(key, (k, v) -> v == null ? 1 : v + 1);
+            char key = magazine.charAt(i);
+            int value = map.getOrDefault(key, 0);
+            map.put(key, value + 1);
         }
         for (int i = 0; i < ransomNote.length(); i++) {
-            Character key = ransomNote.charAt(i);
-            if (!map.containsKey(key)) {
+            char key = ransomNote.charAt(i);
+            int value = map.getOrDefault(key, 0);
+            if (value == 0) {
                 return false;
             }
-            int value = map.get(key);
-            if (value == 1)
-                map.remove(key);
-            else
-                map.put(key, value - 1);
+            map.put(key, value - 1);
+        }
+        return true;
+    }
+
+    public boolean canConstruct1(String ransomNote, String magazine) {
+        if (ransomNote.length() > magazine.length())
+            return false;
+        for (int i = 0; i < ransomNote.length(); i++) {
+            char character = ransomNote.charAt(i);
+            int index = magazine.indexOf(character);
+            if(index == -1)
+                return false;
+            magazine = magazine.substring(0, index)+magazine.substring(index+1);
         }
         return true;
     }
