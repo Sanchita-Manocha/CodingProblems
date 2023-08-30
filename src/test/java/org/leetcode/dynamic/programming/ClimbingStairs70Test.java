@@ -1,8 +1,8 @@
-package org.leetcode.easy.random;
+package org.leetcode.dynamic.programming;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ClimbingStairs70Test {
     ClimbingStairs70 sut = new ClimbingStairs70();

@@ -1,4 +1,4 @@
-package org.leetcode.easy.random;
+package org.leetcode.dynamic.programming;
 
 public class ClimbingStairs70 {
     public int climbStairs(int n) {
