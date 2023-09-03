@@ -1,4 +1,4 @@
-package org.leetcode.dynamic.programming;
+package org.leetcode.dynamic.programming.easy;
 
 public class FibonacciNumber509 {
 

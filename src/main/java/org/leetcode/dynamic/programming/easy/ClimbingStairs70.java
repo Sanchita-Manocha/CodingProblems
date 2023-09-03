@@ -1,4 +1,4 @@
-package org.leetcode.dynamic.programming;
+package org.leetcode.dynamic.programming.easy;
 
 public class ClimbingStairs70 {
     public int climbStairs(int n) {

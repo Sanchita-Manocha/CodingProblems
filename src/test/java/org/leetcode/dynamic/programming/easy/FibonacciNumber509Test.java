@@ -1,6 +1,7 @@
-package org.leetcode.dynamic.programming;
+package org.leetcode.dynamic.programming.easy;
 
 import org.junit.jupiter.api.Test;
+import org.leetcode.dynamic.programming.easy.FibonacciNumber509;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
