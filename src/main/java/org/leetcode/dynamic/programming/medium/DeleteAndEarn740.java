@@ -33,39 +33,21 @@ public class DeleteAndEarn740 {
         }
         return mem.get(n);
     }
+    public int deleteAndEarn1(int[] nums) {
+        int max = 0;
+        for (int num : nums) {
+            max = Math.max(max, num);
+        }
+        int[] arr = new int[max + 1];
+        for (int value : nums) {
+            arr[value] += value;
+        }
+        int[] dp = new int[arr.length+1];
+        dp[0]=arr[0];
+        dp[1]=arr[1];
+        for(int i=2; i<arr.length;i++){
+            dp[i]=Math.max(dp[i-2]+arr[i], dp[i-1]);
+        }
+        return dp[arr.length-1];
+    }
 }
-////        int sum = 0;
-////        for (int i = 0; i < nums.length; i++) {
-////            sum = Math.max(sum, deleteAndEarn(nums, i));
-////        }
-////        return sum;
-//        // find max number
-//        int maxNum = 0;
-//        for(int n: nums) {
-//            maxNum = Math.max(n, maxNum);
-//        }
-//
-//        // initialize 1-d memorization array
-//        int[] A = new int[maxNum+1];
-//
-//        for(int n: nums) {
-//            A[n] += n;
-//        }
-//        // update dp array
-//        for(int i=2; i<A.length; i++) {
-//            A[i] = Math.max(A[i-2] + A[i], A[i-1]);
-//        }
-//        return A[A.length-1];
-//    }
-//
-//    private int deleteAndEarn(int[] nums, int index) {
-//        int value = nums[index];
-//        int sum = value;
-//        nums[index] = 0;
-//        for (int num : nums) {
-//            if (num != value - 1 && num != value + 1)
-//                sum += num;
-//        }
-//        return sum;
-//    }
-//}
